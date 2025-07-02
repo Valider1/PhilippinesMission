@@ -31,8 +31,9 @@ nav a:hover {
   background: linear-gradient(135deg, #003366 0%, #0055a5 50%, #c8102e 100%);
   color: white;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
   padding: 20px;
 }
@@ -50,8 +51,7 @@ nav a:hover {
 }
 
 .section {
-  padding: 80px 20px;
-  text-align: center;
+  padding: 100px 20px;
 }
 
 .section h2 {
@@ -78,4 +78,24 @@ footer {
   text-align: center;
   padding: 10px;
   font-size: 0.9em;
+}
+
+#about {
+  background: #ffffff;
+}
+
+#updates {
+  background: #f4f4f4;
+}
+
+#gallery {
+  background: #ffffff;
+}
+
+#contact {
+  background: #f4f4f4;
+}
+
+html {
+  scroll-behavior: smooth;
 }
