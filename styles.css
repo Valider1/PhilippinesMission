@@ -48,6 +48,7 @@ nav a:hover {
   text-align: center;
   padding: 20px;
   color: white;
+   background-attachment: fixed;
 }
 
 .hero::before {
@@ -94,6 +95,7 @@ nav a:hover {
   font-size: 2em;
   color: #00bfff;
   animation: bounce 2s infinite;
+  text-shadow: 0 0 10px #00bfff;
 }
 
 @keyframes bounce {
@@ -106,6 +108,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+   background: linear-gradient(to bottom, rgba(255,255,255,0.02), rgba(255,255,255,0));
 }
 
 .glass {
@@ -116,8 +119,13 @@ nav a:hover {
   width: 80%;
   max-width: 800px;
   margin: 40px auto;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   box-shadow: 0 0 20px rgba(0, 191, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.1);
+  
+}
+
+.glass h2 {
+  position: relative;
 }
 
 .glass h2 {
@@ -128,6 +136,22 @@ nav a:hover {
 .glass p {
   text-align: center;
   max-width: 700px;
+}
+
+.glass h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  width: 0;
+  height: 3px;
+  background: #00bfff;
+  transition: width 0.4s ease, left 0.4s ease;
+}
+
+.glass h2:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 footer {
