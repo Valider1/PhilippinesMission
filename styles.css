@@ -6,20 +6,28 @@ body {
 }
 
 .hero {
-  background: linear-gradient(135deg, #003366, #0055a5, #c8102e);
+  background: linear-gradient(135deg, #003366 0%, #0055a5 50%, #c8102e 100%);
   color: white;
-  padding: 60px 20px;
+  padding: 80px 20px 60px 20px;
   text-align: center;
   position: relative;
 }
 
 nav {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  border-radius: 8px;
   margin-bottom: 20px;
 }
+
 
 nav a {
   color: white;
