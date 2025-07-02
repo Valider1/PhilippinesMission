@@ -4,6 +4,12 @@ body {
   background: #0a192f;
   color: #cfd8dc;
   scroll-behavior: smooth;
+   opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+body.loaded {
+  opacity: 1;
 }
 
 nav {
