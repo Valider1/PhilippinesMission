@@ -33,7 +33,7 @@ nav a:hover {
 
 .hero {
   height: 100vh;
-  background: url('Temple.png') center/cover no-repeat;
+  background: url('images/Temple.png') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,10 +43,8 @@ nav a:hover {
   color: white;
 }
 
-
 .hero h1 {
   font-size: 2.5em;
-  color: #ffffff;
   margin: 0;
 }
 
