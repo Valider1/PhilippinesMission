@@ -1,66 +1,59 @@
-/* Apply basic font and background */
 body {
-  font-family: 'Open Sans', sans-serif;
-  background: #f0f8ff;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #f4f6f8;
   color: #333;
-  margin: 0;
-  padding: 0;
 }
 
-/* Header styling */
-header {
-  background: #003366; /* Dark blue (mission color) */
+.hero {
+  background: linear-gradient(135deg, #003366, #0055a5, #c8102e);
   color: white;
-  padding: 30px 20px;
+  padding: 60px 20px;
   text-align: center;
+  position: relative;
 }
 
-header h1 {
-  margin: 0 0 10px 0;
-}
-
-header p {
-  margin: 0;
-  font-size: 1.1em;
-}
-
-/* Nav bar */
 nav {
-  background: #0055a5; /* Brighter blue */
-  padding: 10px 0;
-  text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 nav a {
   color: white;
-  margin: 0 15px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
   transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #ffcc00; /* Gold hover (Philippines flag gold) */
+  color: #ffcc00;
 }
 
-/* Main content sections */
-section {
+.hero-text h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.hero-text p {
+  margin: 5px 0 0;
+}
+
+.card {
+  background: white;
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-section h2 {
+.card h2 {
   color: #003366;
 }
 
-/* Footer */
 footer {
   background: #003366;
   color: white;
