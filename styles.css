@@ -33,7 +33,7 @@ nav a:hover {
 
 .hero {
   height: 100vh;
-   position: relative;
+  position: relative;
   background: url('images/Temple.png') center/cover no-repeat;
   display: flex;
   justify-content: center;
@@ -44,6 +44,17 @@ nav a:hover {
   color: white;
 }
 
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
 
 .hero h1 {
   font-size: 2.5em;
@@ -55,17 +66,6 @@ nav a:hover {
   margin: 10px 0 20px 0;
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4); /* or adjust the darkness */
-}
-
-.hero-content {
-  position: relative;
-  z-index: 1;
-}
 .cta-button {
   padding: 10px 20px;
   background: #00bfff;
@@ -73,11 +73,30 @@ nav a:hover {
   text-decoration: none;
   border-radius: 5px;
   font-weight: 600;
-  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, transform 0.3s;
+  box-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff inset;
 }
 
 .cta-button:hover {
-  box-shadow: 0 0 20px #00bfff;
+  box-shadow: 0 0 20px #00bfff, 0 0 30px #00bfff inset;
+  transform: scale(1.05);
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 20px;
+  font-size: 2em;
+  color: #00bfff;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
 }
 
 .section {
