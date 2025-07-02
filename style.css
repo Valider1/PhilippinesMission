@@ -1,41 +1,70 @@
+/* Apply basic font and background */
 body {
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  background: #f0f8ff;
+  color: #333;
   margin: 0;
   padding: 0;
-  background: #f9f9f9;
-  color: #333;
 }
 
+/* Header styling */
 header {
-  background: #003366;
+  background: #003366; /* Dark blue (mission color) */
   color: white;
-  padding: 20px;
+  padding: 30px 20px;
   text-align: center;
 }
 
+header h1 {
+  margin: 0 0 10px 0;
+}
+
+header p {
+  margin: 0;
+  font-size: 1.1em;
+}
+
+/* Nav bar */
 nav {
-  background: #0055a5;
+  background: #0055a5; /* Brighter blue */
+  padding: 10px 0;
   text-align: center;
-  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav a {
   color: white;
   margin: 0 15px;
   text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #ffcc00; /* Gold hover (Philippines flag gold) */
 }
 
+/* Main content sections */
 section {
+  max-width: 800px;
+  margin: 20px auto;
   padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+section h2 {
+  color: #003366;
+}
+
+/* Footer */
 footer {
   background: #003366;
   color: white;
   text-align: center;
   padding: 10px;
+  font-size: 0.9em;
 }
