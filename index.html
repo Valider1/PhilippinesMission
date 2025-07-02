@@ -19,7 +19,6 @@
 
   <header class="hero">
     <div class="hero-content">
-        
       <h1>Welcome to My Mission Journey</h1>
       <p>Philippines Manila Mission | October 6, 2025</p>
       <a href="#updates" class="cta-button">Read My Updates</a>
@@ -27,9 +26,12 @@
     </div>
   </header>
 
-  <section id="about" class="section glass fade-in">
-    <h2>About Me</h2>
-    <p>Hi! I’m Elder Jaden Jenkins. I’ve been called to serve in the Philippines Manila Mission. I’m excited to share my testimony, experiences, and photos here as I serve.</p>
+  <section id="about" class="section glass fade-in about-flex">
+    <img src="images/your-photo.jpg" alt="Elder Jaden Jenkins" class="about-pic">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>Hi! I’m Elder Jaden Jenkins. I’ve been called to serve in the Philippines Manila Mission. I’m excited to share my testimony, experiences, and photos here as I serve.</p>
+    </div>
   </section>
 
   <section id="updates" class="section glass fade-in">
@@ -54,7 +56,6 @@
   <script>
     const faders = document.querySelectorAll('.fade-in');
     const options = { threshold: 0.1 };
-
     const appearOnScroll = new IntersectionObserver(function(entries, observer) {
       entries.forEach(entry => {
         if (!entry.isIntersecting) return;
@@ -62,18 +63,15 @@
         observer.unobserve(entry.target);
       });
     }, options);
-
     faders.forEach(fader => {
       appearOnScroll.observe(fader);
     });
   </script>
 
-    <script>
+  <script>
     window.addEventListener('load', () => {
       document.body.classList.add('loaded');
     });
   </script>
-  
 </body>
-
 </html>

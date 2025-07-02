@@ -4,7 +4,7 @@ body {
   background: #0a192f;
   color: #cfd8dc;
   scroll-behavior: smooth;
-   opacity: 0;
+  opacity: 0;
   transition: opacity 1s ease-out;
 }
 
@@ -97,12 +97,8 @@ nav a:hover {
 }
 
 @keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
 }
 
 .section {
@@ -124,6 +120,25 @@ nav a:hover {
 
 .glass h2 {
   color: #66fcf1;
+}
+
+.about-flex {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-pic {
+  width: 250px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 250px;
 }
 
 footer {
