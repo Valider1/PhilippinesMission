@@ -1,75 +1,91 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  color: #333;
+  background: #0a192f;
+  color: #cfd8dc;
+  scroll-behavior: smooth;
 }
 
 nav {
-  position: sticky;
-  top: 0;
-  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  justify-content: center;
   gap: 20px;
-  padding: 10px 0;
-  z-index: 1000;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
 }
 
 nav a {
-  color: white;
+  color: #cfd8dc;
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.3s;
+  transition: color 0.3s, text-shadow 0.3s;
 }
 
 nav a:hover {
-  color: #ffcc00;
+  color: #00bfff;
+  text-shadow: 0 0 10px #00bfff;
 }
 
 .hero {
   height: 100vh;
-  background: linear-gradient(135deg, #003366 0%, #0055a5 50%, #c8102e 100%);
-  color: white;
+  background: linear-gradient(135deg, #0a192f 0%, #003366 50%, #c8102e 100%);
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
   padding: 20px;
 }
 
-
-
-.hero-content h1 {
+.hero h1 {
   font-size: 2.5em;
-  margin: 0 0 10px 0;
+  color: #ffffff;
+  margin: 0;
 }
 
-.hero-content p {
+.hero p {
   font-size: 1.2em;
-  margin: 0;
+  margin: 10px 0 20px 0;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  background: #00bfff;
+  color: #0a192f;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: box-shadow 0.3s;
+}
+
+.cta-button:hover {
+  box-shadow: 0 0 20px #00bfff;
 }
 
 .section {
   padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.section h2 {
-  font-size: 2em;
-  margin-bottom: 10px;
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  width: 80%;
+  max-width: 800px;
+  margin: 40px auto;
 }
 
-.section.blue {
-  background: #0055a5;
-  color: white;
-}
-
-.section.white {
-  background: #ffffff;
-}
-
-.section.gray {
-  background: #f4f4f4;
+.glass h2 {
+  color: #66fcf1;
 }
 
 footer {
@@ -78,24 +94,4 @@ footer {
   text-align: center;
   padding: 10px;
   font-size: 0.9em;
-}
-
-#about {
-  background: #ffffff;
-}
-
-#updates {
-  background: #f4f4f4;
-}
-
-#gallery {
-  background: #ffffff;
-}
-
-#contact {
-  background: #f4f4f4;
-}
-
-html {
-  scroll-behavior: smooth;
 }
